@@ -1,0 +1,14 @@
+Convert to pfx https://www.sslshopper.com/ssl-converter.html 
+(for c# webapi
+
+  builder.WebHost.ConfigureKestrel(serverOptions =>
+{
+    serverOptions.ConfigureEndpointDefaults(listenOptions =>
+    {
+        listenOptions.UseHttps("certificate.pfx", "your_pass");
+    });
+});
+)
+
+
+Free ssl for 90 Days: https://app.zerossl.com/
